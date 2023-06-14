@@ -1,0 +1,150 @@
+2023/06/14 07:41:56 Skupper service controller
+2023/06/14 07:41:56 Version: 1.4.0-rc3
+2023/06/14 07:41:56 Setting up event handlers
+2023/06/14 07:41:56 Waiting for Skupper router component to start
+2023/06/14 07:42:11 Starting the Skupper controller
+2023/06/14 07:42:11 Waiting for informer caches to sync
+2023/06/14 07:42:11 Starting workers
+2023/06/14 07:42:12 Console server listening on :8080
+2023/06/14 07:42:12 Claim verifier listening on :8081
+2023/06/14 07:42:12 Started workers
+2023/06/14 07:42:12 Skupper policy is disabled
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:0 linkState:[] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:0 linkState:[] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+Interior nodes are [map[address:amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9 cost:<nil> id:private1-skupper-router-74979c7cfd-5kpk9 identity:router.node/private1-skupper-router-74979c7cfd-5kpk9 index:0 instance:1686728526 lastTopoChange:1686728540 linkState:[public1-skupper-router-86cd45c9df-27nvg] name:router.node/private1-skupper-router-74979c7cfd-5kpk9 nextHop:(self) protocolVersion:1 routerLink:<nil> type:io.skupper.router.router.node validOrigins:[]] map[address:amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg cost:50 id:public1-skupper-router-86cd45c9df-27nvg identity:router.node/public1-skupper-router-86cd45c9df-27nvg index:1 instance:1686728516 lastTopoChange:<nil> linkState:[private1-skupper-router-74979c7cfd-5kpk9] name:router.node/public1-skupper-router-86cd45c9df-27nvg nextHop:<nil> protocolVersion:1 routerLink:0 type:io.skupper.router.router.node validOrigins:[]]]
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.router [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.router [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.connection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management} {io.skupper.router.connection [] amqp:/_topo/0/public1-skupper-router-86cd45c9df-27nvg/$management}])
+Waiting for response 1 of 2
+Waiting for response 2 of 2
+BatchQuery([{io.skupper.router.httpRequestInfo [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([{io.skupper.router.tcpConnection [] amqp:/_topo/0/private1-skupper-router-74979c7cfd-5kpk9/$management}])
+Waiting for response 1 of 1
+BatchQuery([])

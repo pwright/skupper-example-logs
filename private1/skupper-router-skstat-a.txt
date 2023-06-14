@@ -1,0 +1,39 @@
+2023-06-14 08:00:44.011442 UTC
+private1-skupper-router-74979c7cfd-5kpk9
+
+Router Addresses
+  class   addr                                                     distrib    pri  local  remote  in      out     thru
+  ========================================================================================================================
+  local   $_management_internal                                    closest    -    0      0       0       0       0
+  mobile  $management                                              closest    -    0      0       254     0       0
+  local   $management                                              closest    -    0      0       75      0       0
+  mobile  _$qd.edge_addr_tracking                                  balanced   -    0      0       0       0       0
+  mobile  _$qd.edge_heartbeat                                      balanced   -    0      0       0       0       0
+  mobile  _$qd.mesh_discovery                                      balanced   -    0      0       0       0       0
+  mobile  aed3765b-59c1-41fd-8746-51021138b94b/skupper-site-query  balanced   -    1      0       8       14      0
+  mobile  cc457d47-5752-4b9f-a999-0f0fe53313a8/skupper-site-query  balanced   -    0      1       6       0       6
+  mobile  httpsvc:8080                                             balanced   -    1      1       54,754  54,754  0
+  mobile  mc/$skupper-service-sync                                 multicast  -    1      1       225     447     223
+  mobile  mc/sfe.27nvg:0                                           multicast  -    0      1       0       0       0
+  mobile  mc/sfe.27nvg:0.flows                                     multicast  -    0      1       0       0       0
+  mobile  mc/sfe.5kpk9:0                                           multicast  -    0      1       0       0       551
+  mobile  mc/sfe.5kpk9:0.flows                                     multicast  -    0      1       0       0       2,773
+  mobile  mc/sfe.aed3765b-59c1-41fd-8746-51021138b94b              multicast  -    0      1       568     0       568
+  mobile  mc/sfe.all                                               multicast  -    0      1       112     0       222
+  mobile  mc/sfe.cc457d47-5752-4b9f-a999-0f0fe53313a8              multicast  -    0      1       0       0       0
+  router  public1-skupper-router-86cd45c9df-27nvg                  closest    -    0      1       54,787  0       54,820
+  local   qdhello                                                  flood      -    1      0       0       0       0
+  local   qdrouter                                                 flood      -    0      0       0       0       0
+  topo    qdrouter                                                 flood      -    0      1       0       0       40
+  local   qdrouter.ma                                              multicast  -    0      0       0       0       0
+  topo    qdrouter.ma                                              multicast  -    0      1       0       0       1
+  mobile  sfe.27nvg:0                                              closest    -    0      1       0       0       0
+  mobile  sfe.5kpk9:0                                              closest    -    0      0       0       0       0
+  mobile  sfe.aed3765b-59c1-41fd-8746-51021138b94b                 balanced   -    1      0       0       1       0
+  mobile  sfe.cc457d47-5752-4b9f-a999-0f0fe53313a8                 balanced   -    0      1       0       0       0
+  local   temp.1zXeCakeNQZ7Qos                                     balanced   -    1      0       0       1       0
+  local   temp.8zS01e+FST3r8I3                                     balanced   -    1      0       8       40      0
+  local   temp.C8EHKExr3oeSfbZ                                     balanced   -    1      0       0       3       0
+  local   temp.iRgnBDe+5MkvfHt                                     balanced   -    1      0       0       96      0
+  local   temp.u2wuuMu_OzHNnok                                     balanced   -    1      0       0       1       0
+  local   temp.zkQw30hQJiGhUM1                                     balanced   -    1      0       0       213     0

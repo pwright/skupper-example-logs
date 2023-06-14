@@ -1,0 +1,3 @@
+2023-06-14 08:00:43.790829 UTC
+private1-skupper-router-74979c7cfd-5kpk9
+

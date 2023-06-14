@@ -1,0 +1,68 @@
+2023-06-14 08:00:38.467575 UTC
+public1-skupper-router-86cd45c9df-27nvg
+
+Memory Pools
+  type                        size    batch  thread-max  total  in-threads  rebal-in  rebal-out
+  ===============================================================================================
+  qd_adaptor_buffer_t         16,408  16     32          1,568  608         34,063    34,123
+  qd_adaptor_config_t         72      64     128         128    128         0         0
+  qd_adaptor_listener_t       160     64     128         64     64          0         0
+  qd_bitmask_t                24      64     128         512    320         937       940
+  qd_buffer_t                 4,096   16     32          448    176         11,959    11,976
+  qd_composed_field_t         48      64     128         448    448         0         0
+  qd_composite_t              112     64     128         448    448         0         0
+  qd_connection_t             2,504   16     32          64     64          0         0
+  qd_delivery_state_t         48      64     128         320    256         59        60
+  qd_hash_handle_t            16      64     128         320    256         9         10
+  qd_hash_item_t              40      64     128         320    256         9         10
+  qd_iterator_t               128     64     128         704    448         2,488     2,492
+  qd_link_ref_t               24      64     128         384    256         29        31
+  qd_link_t                   136     64     128         256    256         0         0
+  qd_listener_t               360     64     128         64     64          0         0
+  qd_log_entry_t              2,112   16     32          1,088  1,088       0         0
+  qd_management_context_t     56      64     128         192    192         0         0
+  qd_message_content_t        1,088   64     128         640    384         256       260
+  qd_message_stream_data_t    120     64     128         256    256         0         0
+  qd_message_t                96      64     128         960    576         5,357     5,363
+  qd_node_t                   56      64     128         64     64          0         0
+  qd_parse_node_t             104     64     128         128    128         0         0
+  qd_parse_tree_t             32      64     128         64     64          0         0
+  qd_parsed_field_t           136     64     128         576    384         214       217
+  qd_session_t                48      64     128         256    256         0         0
+  qd_tcp_adaptor_config_t     16      64     128         128    128         0         0
+  qd_tcp_connector_t          72      64     128         64     64          0         0
+  qd_tcp_listener_t           72      64     128         64     64          0         0
+  qd_timer_t                  112     64     128         128    128         0         0
+  qdr_action_t                136     64     128         512    320         72,249    72,252
+  qdr_address_config_t        72      64     128         64     64          0         0
+  qdr_address_t               392     64     128         256    192         9         10
+  qdr_address_watch_t         72      64     128         64     64          0         0
+  qdr_connection_info_t       144     64     128         576    256         4,170     4,175
+  qdr_connection_ref_t        24      64     128         64     64          0         0
+  qdr_connection_t            584     64     128         576    256         4,170     4,175
+  qdr_connection_work_t       56      64     128         512    384         8,348     8,350
+  qdr_core_timer_t            40      64     128         64     64          0         0
+  qdr_delivery_cleanup_t      32      64     128         512    384         10,496    10,498
+  qdr_delivery_ref_t          24      64     128         512    384         7,540     7,542
+  qdr_delivery_t              344     64     128         768    320         5,128     5,135
+  qdr_field_t                 32      64     128         640    512         2,487     2,489
+  qdr_forward_deliver_info_t  32      64     128         64     64          0         0
+  qdr_general_work_t          160     64     128         512    384         11,420    11,422
+  qdr_link_ref_t              24      64     128         1,344  832         30,993    31,001
+  qdr_link_t                  512     64     128         832    448         8,344     8,350
+  qdr_link_work_t             48      64     128         768    448         13,741    13,746
+  qdr_node_t                  88      64     128         64     64          0         0
+  qdr_query_t                 344     64     128         256    256         0         0
+  qdr_tcp_connection_t        2,464   16     32          272    128         16,693    16,702
+  qdr_tcp_stats_t             72      64     128         128    128         0         0
+  qdr_terminus_t              64      64     128         448    256         15        18
+  qdtm_router_t               16      64     128         64     64          0         0
+  vflow_attribute_data_t      32      64     128         2,368  704         36,177    36,203
+  vflow_rate_t                112     64     128         192    128         9         10
+  vflow_record_t              160     64     128         704    384         4,169     4,174
+  vflow_work_t                56      64     128         448    320         49,361    49,363
+
+Memory Summary
+  VmSize   Pooled
+  ===================
+  547 MiB  32.3 MiB

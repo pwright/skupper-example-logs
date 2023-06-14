@@ -1,0 +1,9 @@
+2023-06-14 08:00:43.565789 UTC
+private1-skupper-router-74979c7cfd-5kpk9
+
+Routers in the Network
+Last Topology Change: Wednesday Jun 14 07:42:20 2023 GMT
+  router-id                                 next-hop  link
+  ==========================================================
+  private1-skupper-router-74979c7cfd-5kpk9  (self)    -
+  public1-skupper-router-86cd45c9df-27nvg   -         0

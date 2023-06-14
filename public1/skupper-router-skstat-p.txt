@@ -1,0 +1,22 @@
+2023-06-14 08:00:38.688813 UTC
+public1-skupper-router-86cd45c9df-27nvg
+
+Policy Configuration
+  attr                            value
+  ==========================================
+  Maximum Concurrent Connections  65535
+  Maximum Message Size            0
+  Enable Vhost Policy             False
+  Enable Vhost Name Patterns      False
+  Policy Directory                (nil)
+  Default Vhost                   $default
+
+Policy Status
+  attr                         value
+  ====================================
+  Connections Processed        31
+  Connections Denied           0
+  Connections Current          24
+  Links Denied                 0
+  Maximum Message Size Denied  0
+  Total Denials                0

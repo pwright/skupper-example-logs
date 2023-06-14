@@ -1,0 +1,33 @@
+2023-06-14 08:00:42.870220 UTC
+private1-skupper-router-74979c7cfd-5kpk9
+
+Router Statistics
+  attr                             value
+  ===========================================================================
+  Version                          2.4.0
+  Mode                             interior
+  Router Id                        private1-skupper-router-74979c7cfd-5kpk9
+  Worker Threads                   4
+  Uptime                           000:00:18:35
+  VmSize                           547 MiB
+  Area                             0
+  Auto Links                       0
+  Links                            104
+  Nodes                            1
+  Addresses                        33
+  Connections                      15
+  Presettled Count                 54754
+  Dropped Presettled Count         0
+  Accepted Count                   56289
+  Rejected Count                   0
+  Released Count                   0
+  Modified Count                   0
+  Deliveries Delayed > 1sec        0
+  Deliveries Delayed > 10sec       0
+  Deliveries Stuck > 10sec         0
+  Links Blocked                    0
+  Ingress Count                    110781
+  Egress Count                     55570
+  Transit Count                    4401
+  Deliveries from Route Container  0
+  Deliveries to Route Container    0

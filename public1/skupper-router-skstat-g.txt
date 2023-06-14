@@ -1,0 +1,33 @@
+2023-06-14 08:00:37.078497 UTC
+public1-skupper-router-86cd45c9df-27nvg
+
+Router Statistics
+  attr                             value
+  ==========================================================================
+  Version                          2.4.0
+  Mode                             interior
+  Router Id                        public1-skupper-router-86cd45c9df-27nvg
+  Worker Threads                   4
+  Uptime                           000:00:18:40
+  VmSize                           547 MiB
+  Area                             0
+  Auto Links                       0
+  Links                            232
+  Nodes                            1
+  Addresses                        62
+  Connections                      85
+  Presettled Count                 266984
+  Dropped Presettled Count         5
+  Accepted Count                   56916
+  Rejected Count                   0
+  Released Count                   0
+  Modified Count                   0
+  Deliveries Delayed > 1sec        0
+  Deliveries Delayed > 10sec       0
+  Deliveries Stuck > 10sec         0
+  Links Blocked                    0
+  Ingress Count                    323041
+  Egress Count                     287022
+  Transit Count                    267
+  Deliveries from Route Container  0
+  Deliveries to Route Container    0

@@ -1,0 +1,52 @@
+data:
+  cluster-permissions: "false"
+  console: "false"
+  console-authentication: internal
+  console-password: ""
+  console-user: ""
+  enable-skupper-events: "true"
+  flow-collector: "false"
+  ingress: loadbalancer
+  name: private1
+  router-console: "false"
+  router-cpu: "3"
+  router-logging: ""
+  router-mode: interior
+  service-controller: "true"
+  service-sync: "true"
+metadata:
+  creationTimestamp: "2023-06-14T07:41:23Z"
+  labels:
+    internal.skupper.io/site-controller-ignore: "true"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:cluster-permissions: {}
+        f:console: {}
+        f:console-authentication: {}
+        f:console-password: {}
+        f:console-user: {}
+        f:enable-skupper-events: {}
+        f:flow-collector: {}
+        f:ingress: {}
+        f:name: {}
+        f:router-console: {}
+        f:router-cpu: {}
+        f:router-logging: {}
+        f:router-mode: {}
+        f:service-controller: {}
+        f:service-sync: {}
+      f:metadata:
+        f:labels:
+          .: {}
+          f:internal.skupper.io/site-controller-ignore: {}
+    manager: skupper
+    operation: Update
+    time: "2023-06-14T07:41:23Z"
+  name: skupper-site
+  namespace: private1
+  resourceVersion: "478"
+  uid: aed3765b-59c1-41fd-8746-51021138b94b

@@ -1,0 +1,27 @@
+data:
+  httpsvc: '{"address":"httpsvc","protocol":"tcp","ports":[8080],"exposeIngress":"","targets":[{"name":"http-server-public1","selector":"application=http-server","targetPorts":{"8080":8080},"namespace":"public1"}]}'
+metadata:
+  creationTimestamp: "2023-06-14T07:41:10Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:httpsvc: {}
+      f:metadata:
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"cc457d47-5752-4b9f-a999-0f0fe53313a8"}: {}
+    manager: skupper
+    operation: Update
+    time: "2023-06-14T07:42:27Z"
+  name: skupper-services
+  namespace: public1
+  ownerReferences:
+  - apiVersion: v1
+    kind: ConfigMap
+    name: skupper-site
+    uid: cc457d47-5752-4b9f-a999-0f0fe53313a8
+  resourceVersion: "749"
+  uid: 41994836-27b6-48a7-aa8d-e5517c91e85b

@@ -1,0 +1,31 @@
+data:
+  skrouterd.conf: |2
+
+    pwcheck_method: auxprop
+    auxprop_plugin: sasldb
+    sasldb_path: /tmp/skrouterd.sasldb
+metadata:
+  creationTimestamp: "2023-06-14T07:41:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:skrouterd.conf: {}
+      f:metadata:
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"aed3765b-59c1-41fd-8746-51021138b94b"}: {}
+    manager: skupper
+    operation: Update
+    time: "2023-06-14T07:41:23Z"
+  name: skupper-sasl-config
+  namespace: private1
+  ownerReferences:
+  - apiVersion: v1
+    kind: ConfigMap
+    name: skupper-site
+    uid: aed3765b-59c1-41fd-8746-51021138b94b
+  resourceVersion: "479"
+  uid: c98b6af4-2b92-4bd7-a73e-b290cfc09fc1

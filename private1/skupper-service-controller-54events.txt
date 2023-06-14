@@ -1,0 +1,33 @@
+NAME                         COUNT                                                                  AGE
+GatewayQueryRequest          7                                                                      3s
+                             7     gateway request                                                  3s
+SiteQueryRequest             7                                                                      3s
+                             7     site data request                                                3s
+BridgeTargetEvent            3                                                                      18m14s
+                             3     Adding pod for httpsvc:                                          18m14s
+                                   http-server-private1-774567c64f-hdlks                            
+ServiceControllerEvent       11                                                                     18m14s
+                             3     Checking service for: httpsvc                                    18m14s
+                             1     Got targetpods event httpsvc                                     18m14s
+                             3     Service definitions have changed                                 18m14s
+                             1     service event for private1/httpsvc                               18m23s
+                             1     service event for private1/skupper-router                        18m33s
+ServiceControllerUpdateEvent 2                                                                      18m14s
+                             2     Updating skupper-internal                                        18m14s
+DefinitionMonitorEvent       15                                                                     18m14s
+                             2     Service definitions have changed                                 18m14s
+                             5     deployment event for private1/http-server-private1               18m15s
+                             1     service event for private1/httpsvc                               18m23s
+                             2     deployment event for private1/skupper-service-controller         18m33s
+                             1     deployment event for private1/skupper-router                     18m33s
+IpMappingEvent               12                                                                     18m15s
+                             2     10.85.0.9 mapped to http-server-private1-774567c64f-hdlks        18m15s
+                             4      mapped to http-server-private1-774567c64f-hdlks                 18m25s
+                             4     10.85.0.7 mapped to                                              18m25s
+                                   skupper-service-controller-546f5c457c-lxbjd                      
+                             2     10.85.0.6 mapped to skupper-router-74979c7cfd-5kpk9              18m33s
+ServiceSyncEvent             1                                                                      18m23s
+                             1     Service interface(s) added httpsvc                               18m23s
+ClaimHandler                 1                                                                      18m30s
+                             1     Retrieved token aed3765b-59c1-41fd-8746-51021138b94b from        18m30s
+                                   https://10.104.244.153:8081/fb0b8c52-0a86-11ee-b07b-0c9a3c6ad47f 

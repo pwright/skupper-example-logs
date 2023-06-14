@@ -1,0 +1,158 @@
+data:
+  skrouterd.json: |-
+    [
+        [
+            "router",
+            {
+                "id": "public1-${HOSTNAME}",
+                "mode": "interior",
+                "helloMaxAgeSeconds": "3",
+                "metadata": "{\"id\":\"cc457d47-5752-4b9f-a999-0f0fe53313a8\",\"version\":\"1.4.0-rc3\",\"platform\":\"kubernetes\"}"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-amqps",
+                "certFile": "/etc/skupper-router-certs/skupper-amqps/tls.crt",
+                "privateKeyFile": "/etc/skupper-router-certs/skupper-amqps/tls.key",
+                "caCertFile": "/etc/skupper-router-certs/skupper-amqps/ca.crt"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-service-client",
+                "caCertFile": "/etc/skupper-router-certs/skupper-service-client/ca.crt"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-internal",
+                "certFile": "/etc/skupper-router-certs/skupper-internal/tls.crt",
+                "privateKeyFile": "/etc/skupper-router-certs/skupper-internal/tls.key",
+                "caCertFile": "/etc/skupper-router-certs/skupper-internal/ca.crt"
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "amqps",
+                "port": 5671,
+                "sslProfile": "skupper-amqps",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "interior-listener",
+                "role": "inter-router",
+                "port": 55671,
+                "sslProfile": "skupper-internal",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true,
+                "maxFrameSize": 16384,
+                "maxSessionFrames": 640
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "edge-listener",
+                "role": "edge",
+                "port": 45671,
+                "sslProfile": "skupper-internal",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true,
+                "maxFrameSize": 16384,
+                "maxSessionFrames": 640
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "@9090",
+                "role": "normal",
+                "port": 9090,
+                "http": true,
+                "httpRootDir": "disabled",
+                "healthz": true,
+                "metrics": true
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "amqp",
+                "host": "localhost",
+                "port": 5672
+            }
+        ],
+        [
+            "address",
+            {
+                "prefix": "mc",
+                "distribution": "multicast"
+            }
+        ],
+        [
+            "tcpConnector",
+            {
+                "name": "httpsvc.http-server-public1@10.85.0.8:8080:8080",
+                "host": "10.85.0.8",
+                "port": "8080",
+                "address": "httpsvc:8080",
+                "siteId": "cc457d47-5752-4b9f-a999-0f0fe53313a8"
+            }
+        ],
+        [
+            "tcpListener",
+            {
+                "name": "httpsvc:8080",
+                "port": "1024",
+                "address": "httpsvc:8080",
+                "siteId": "cc457d47-5752-4b9f-a999-0f0fe53313a8"
+            }
+        ],
+        [
+            "log",
+            {
+                "module": "ROUTER_CORE",
+                "enable": "error+"
+            }
+        ]
+    ]
+metadata:
+  creationTimestamp: "2023-06-14T07:41:10Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data: {}
+      f:metadata:
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"cc457d47-5752-4b9f-a999-0f0fe53313a8"}: {}
+    manager: skupper
+    operation: Update
+    time: "2023-06-14T07:41:10Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:skrouterd.json: {}
+    manager: service-controller
+    operation: Update
+    time: "2023-06-14T07:42:27Z"
+  name: skupper-internal
+  namespace: public1
+  ownerReferences:
+  - apiVersion: v1
+    kind: ConfigMap
+    name: skupper-site
+    uid: cc457d47-5752-4b9f-a999-0f0fe53313a8
+  resourceVersion: "750"
+  uid: 0165682e-531e-4b08-a9db-c94503e93b6d

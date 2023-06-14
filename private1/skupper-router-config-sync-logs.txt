@@ -1,0 +1,36 @@
+2023/06/14 07:42:04 Config Sync
+2023/06/14 07:42:04 Version: 1.4.0-rc3
+2023/06/14 07:42:04 Creating kube client...
+2023/06/14 07:42:04 Creating informer...
+2023/06/14 07:42:04 Waiting for informer to sync...
+2023/06/14 07:42:04 Starting sync loop...
+2023/06/14 07:42:05 sync failed: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:42:05 Requeuing private1/skupper-internal after error: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+E0614 07:42:05.002857       1 config_sync.go:173] Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:42:06 sync failed: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:42:06 Requeuing private1/skupper-internal after error: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+E0614 07:42:06.000164       1 config_sync.go:173] Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:42:17 Synchronising secrets related to Connector link1
+2023/06/14 07:42:17 Creating ssl profile link1-profile
+2023/06/14 07:42:17 CREATE io.skupper.router.sslProfile link1-profile map[caCertFile:/etc/skupper-router-certs/link1-profile/ca.crt certFile:/etc/skupper-router-certs/link1-profile/tls.crt name:link1-profile privateKeyFile:/etc/skupper-router-certs/link1-profile/tls.key]
+2023/06/14 07:42:17 CREATE io.skupper.router.connector link1 map[cost:50 host:10.107.154.84 maxFrameSize:16384 maxSessionFrames:640 name:link1 port:55671 role:inter-router sslProfile:link1-profile]
+2023/06/14 07:42:21 TcpConnectors added=[], deleted=[]
+2023/06/14 07:42:21 TcpListeners added=[{httpsvc:8080  1024 httpsvc:8080 aed3765b-59c1-41fd-8746-51021138b94b  <nil>}], deleted=[]
+2023/06/14 07:42:21 HttpConnectors added=[], deleted=[]
+2023/06/14 07:42:21 HttpListeners added=[], deleted=[]
+2023/06/14 07:42:21 SslProfiles added=[], deleted=[]
+2023/06/14 07:42:21 Sync profiles: Added []  Deleted []
+2023/06/14 07:42:21 CREATE io.skupper.router.tcpListener httpsvc:8080 map[address:httpsvc:8080 name:httpsvc:8080 port:1024 siteId:aed3765b-59c1-41fd-8746-51021138b94b]
+2023/06/14 07:42:21 sync failed: Bridge config is not synchronised yet
+2023/06/14 07:42:21 Requeuing private1/skupper-internal after error: Bridge config is not synchronised yet
+E0614 07:42:21.678707       1 config_sync.go:173] Bridge config is not synchronised yet
+2023/06/14 07:42:30 TcpConnectors added=[{httpsvc.http-server-private1@10.85.0.9:8080:8080 10.85.0.9 8080 httpsvc:8080 aed3765b-59c1-41fd-8746-51021138b94b  <nil>}], deleted=[]
+2023/06/14 07:42:30 TcpListeners added=[], deleted=[]
+2023/06/14 07:42:30 HttpConnectors added=[], deleted=[]
+2023/06/14 07:42:30 HttpListeners added=[], deleted=[]
+2023/06/14 07:42:30 SslProfiles added=[], deleted=[]
+2023/06/14 07:42:30 Sync profiles: Added []  Deleted []
+2023/06/14 07:42:30 CREATE io.skupper.router.tcpConnector httpsvc.http-server-private1@10.85.0.9:8080:8080 map[address:httpsvc:8080 host:10.85.0.9 name:httpsvc.http-server-private1@10.85.0.9:8080:8080 port:8080 siteId:aed3765b-59c1-41fd-8746-51021138b94b]
+2023/06/14 07:42:30 sync failed: Bridge config is not synchronised yet
+2023/06/14 07:42:30 Requeuing private1/skupper-internal after error: Bridge config is not synchronised yet
+E0614 07:42:30.592544       1 config_sync.go:173] Bridge config is not synchronised yet

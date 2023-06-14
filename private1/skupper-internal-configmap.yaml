@@ -1,0 +1,180 @@
+data:
+  skrouterd.json: |-
+    [
+        [
+            "router",
+            {
+                "id": "private1-${HOSTNAME}",
+                "mode": "interior",
+                "helloMaxAgeSeconds": "3",
+                "metadata": "{\"id\":\"aed3765b-59c1-41fd-8746-51021138b94b\",\"version\":\"1.4.0-rc3\",\"platform\":\"kubernetes\"}"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-service-client",
+                "caCertFile": "/etc/skupper-router-certs/skupper-service-client/ca.crt"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-internal",
+                "certFile": "/etc/skupper-router-certs/skupper-internal/tls.crt",
+                "privateKeyFile": "/etc/skupper-router-certs/skupper-internal/tls.key",
+                "caCertFile": "/etc/skupper-router-certs/skupper-internal/ca.crt"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "link1-profile",
+                "certFile": "/etc/skupper-router-certs/link1-profile/tls.crt",
+                "privateKeyFile": "/etc/skupper-router-certs/link1-profile/tls.key",
+                "caCertFile": "/etc/skupper-router-certs/link1-profile/ca.crt"
+            }
+        ],
+        [
+            "sslProfile",
+            {
+                "name": "skupper-amqps",
+                "certFile": "/etc/skupper-router-certs/skupper-amqps/tls.crt",
+                "privateKeyFile": "/etc/skupper-router-certs/skupper-amqps/tls.key",
+                "caCertFile": "/etc/skupper-router-certs/skupper-amqps/ca.crt"
+            }
+        ],
+        [
+            "connector",
+            {
+                "name": "link1",
+                "role": "inter-router",
+                "host": "10.107.154.84",
+                "port": "55671",
+                "cost": 50,
+                "sslProfile": "link1-profile",
+                "maxFrameSize": 16384,
+                "maxSessionFrames": 640
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "interior-listener",
+                "role": "inter-router",
+                "port": 55671,
+                "sslProfile": "skupper-internal",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true,
+                "maxFrameSize": 16384,
+                "maxSessionFrames": 640
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "edge-listener",
+                "role": "edge",
+                "port": 45671,
+                "sslProfile": "skupper-internal",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true,
+                "maxFrameSize": 16384,
+                "maxSessionFrames": 640
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "@9090",
+                "role": "normal",
+                "port": 9090,
+                "http": true,
+                "httpRootDir": "disabled",
+                "healthz": true,
+                "metrics": true
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "amqp",
+                "host": "localhost",
+                "port": 5672
+            }
+        ],
+        [
+            "listener",
+            {
+                "name": "amqps",
+                "port": 5671,
+                "sslProfile": "skupper-amqps",
+                "saslMechanisms": "EXTERNAL",
+                "authenticatePeer": true
+            }
+        ],
+        [
+            "address",
+            {
+                "prefix": "mc",
+                "distribution": "multicast"
+            }
+        ],
+        [
+            "tcpConnector",
+            {
+                "name": "httpsvc.http-server-private1@10.85.0.9:8080:8080",
+                "host": "10.85.0.9",
+                "port": "8080",
+                "address": "httpsvc:8080",
+                "siteId": "aed3765b-59c1-41fd-8746-51021138b94b"
+            }
+        ],
+        [
+            "tcpListener",
+            {
+                "name": "httpsvc:8080",
+                "port": "1024",
+                "address": "httpsvc:8080",
+                "siteId": "aed3765b-59c1-41fd-8746-51021138b94b"
+            }
+        ],
+        [
+            "log",
+            {
+                "module": "ROUTER_CORE",
+                "enable": "error+"
+            }
+        ]
+    ]
+metadata:
+  creationTimestamp: "2023-06-14T07:41:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data: {}
+      f:metadata:
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"aed3765b-59c1-41fd-8746-51021138b94b"}: {}
+    manager: skupper
+    operation: Update
+    time: "2023-06-14T07:41:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:skrouterd.json: {}
+    manager: service-controller
+    operation: Update
+    time: "2023-06-14T07:42:30Z"
+  name: skupper-internal
+  namespace: private1
+  ownerReferences:
+  - apiVersion: v1
+    kind: ConfigMap
+    name: skupper-site
+    uid: aed3765b-59c1-41fd-8746-51021138b94b
+  resourceVersion: "760"
+  uid: 3cdcb1be-d191-4860-810f-5af503861d60

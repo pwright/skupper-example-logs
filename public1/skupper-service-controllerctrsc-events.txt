@@ -1,0 +1,31 @@
+NAME                         COUNT                                                              AGE
+GatewayQueryRequest          5                                                                  3s
+                             5     gateway request                                              3s
+SiteQueryRequest             5                                                                  3s
+                             5     site data request                                            3s
+DefinitionMonitorEvent       22                                                                 17m55s
+                             5     deployment event for public1/http-client                     17m55s
+                             2     Service definitions have changed                             18m12s
+                             5     deployment event for public1/http-server-public1             18m12s
+                             1     service event for public1/httpsvc                            18m23s
+                             2     deployment event for public1/skupper-service-controller      18m34s
+IpMappingEvent               25                                                                 17m55s
+                             2     10.85.0.10 mapped to http-client-5f77bc7787-mrddw            17m55s
+                             6      mapped to http-client-5f77bc7787-mrddw                      18m9s
+                             2     10.85.0.8 mapped to http-server-public1-774567c64f-94xmx     18m12s
+                             6      mapped to http-server-public1-774567c64f-94xmx              18m24s
+                             2     10.85.0.5 mapped to skupper-prometheus-578f4f5fb6-hvsjl      18m31s
+BridgeTargetEvent            3                                                                  18m12s
+                             3     Adding pod for httpsvc: http-server-public1-774567c64f-94xmx 18m12s
+ServiceControllerEvent       12                                                                 18m12s
+                             3     Checking service for: httpsvc                                18m12s
+                             1     Got targetpods event httpsvc                                 18m12s
+                             3     Service definitions have changed                             18m12s
+                             1     service event for public1/httpsvc                            18m23s
+                             1     service event for public1/skupper                            18m38s
+ServiceControllerUpdateEvent 2                                                                  18m12s
+                             2     Updating skupper-internal                                    18m12s
+ServiceSyncEvent             1                                                                  18m23s
+                             1     Service interface(s) added httpsvc                           18m23s
+TokenClaimVerification       1                                                                  18m24s
+                             1     Claim for fb0b8c52-0a86-11ee-b07b-0c9a3c6ad47f succeeded     18m24s

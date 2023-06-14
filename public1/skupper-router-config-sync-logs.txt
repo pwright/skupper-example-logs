@@ -1,0 +1,29 @@
+2023/06/14 07:41:55 Config Sync
+2023/06/14 07:41:55 Version: 1.4.0-rc3
+2023/06/14 07:41:55 Creating kube client...
+2023/06/14 07:41:55 Creating informer...
+2023/06/14 07:41:55 Waiting for informer to sync...
+2023/06/14 07:41:55 Starting sync loop...
+2023/06/14 07:41:55 sync failed: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:41:55 Requeuing public1/skupper-internal after error: Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+E0614 07:41:55.442625       1 config_sync.go:173] Could not get management agent : Failed to create connection: dial tcp [::1]:5672: connect: connection refused
+2023/06/14 07:42:15 TcpConnectors added=[], deleted=[]
+2023/06/14 07:42:15 TcpListeners added=[{httpsvc:8080  1024 httpsvc:8080 cc457d47-5752-4b9f-a999-0f0fe53313a8  <nil>}], deleted=[]
+2023/06/14 07:42:15 HttpConnectors added=[], deleted=[]
+2023/06/14 07:42:15 HttpListeners added=[], deleted=[]
+2023/06/14 07:42:15 SslProfiles added=[], deleted=[]
+2023/06/14 07:42:15 Sync profiles: Added []  Deleted []
+2023/06/14 07:42:15 CREATE io.skupper.router.tcpListener httpsvc:8080 map[address:httpsvc:8080 name:httpsvc:8080 port:1024 siteId:cc457d47-5752-4b9f-a999-0f0fe53313a8]
+2023/06/14 07:42:15 sync failed: Bridge config is not synchronised yet
+2023/06/14 07:42:15 Requeuing public1/skupper-internal after error: Bridge config is not synchronised yet
+E0614 07:42:15.968771       1 config_sync.go:173] Bridge config is not synchronised yet
+2023/06/14 07:42:27 TcpConnectors added=[{httpsvc.http-server-public1@10.85.0.8:8080:8080 10.85.0.8 8080 httpsvc:8080 cc457d47-5752-4b9f-a999-0f0fe53313a8  <nil>}], deleted=[]
+2023/06/14 07:42:27 TcpListeners added=[], deleted=[]
+2023/06/14 07:42:27 HttpConnectors added=[], deleted=[]
+2023/06/14 07:42:27 HttpListeners added=[], deleted=[]
+2023/06/14 07:42:27 SslProfiles added=[], deleted=[]
+2023/06/14 07:42:27 Sync profiles: Added []  Deleted []
+2023/06/14 07:42:27 CREATE io.skupper.router.tcpConnector httpsvc.http-server-public1@10.85.0.8:8080:8080 map[address:httpsvc:8080 host:10.85.0.8 name:httpsvc.http-server-public1@10.85.0.8:8080:8080 port:8080 siteId:cc457d47-5752-4b9f-a999-0f0fe53313a8]
+2023/06/14 07:42:27 sync failed: Bridge config is not synchronised yet
+2023/06/14 07:42:27 Requeuing public1/skupper-internal after error: Bridge config is not synchronised yet
+E0614 07:42:27.566562       1 config_sync.go:173] Bridge config is not synchronised yet
