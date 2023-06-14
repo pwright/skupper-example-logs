@@ -2,7 +2,7 @@
 
 # LATER This regex pattern will match UIDs like 74979c7cfd-5kpk9
 # pattern="[0-9a-f]{10}-[0-9a-zA-Z]{5}"
-pattern="-[0-9a-f]{9}-"
+pattern="-[0-9a-f]{9}"
 
 for file in *; do
     # Check if the filename contains the UID pattern

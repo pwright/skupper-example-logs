@@ -1,1 +1,6 @@
-- See
+- See [skupper-example-logs/vary-concurrency-public1/skupper-site-configmap.yaml](https://github.com/pwright/skupper-example-logs/blob/main/vary-concurrency-public1/skupper-site-configmap.yaml) for details of the site
+	- Console and flow collector are enabled
+	- I've assigned 3 cpus to the router to try to steepen the curve when concurrency is reset to 0.
+	- service-sync is enabled
+- [skupper-example-logs/vary-concurrency-public1/skupper-router-skstat-g.txt ](https://github.com/pwright/skupper-example-logs/blob/main/vary-concurrency-public1/skupper-router-skstat-g.txt) shows the underlying messages that provide the actual communication
+-
